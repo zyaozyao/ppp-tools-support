@@ -2,31 +2,43 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>支持页面 - My Chrome Extension</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>支持 - PPP Tools 浏览器扩展</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
       background: #f9fafb;
       color: #333;
     }
-    h1 {
-      font-size: 28px;
+    h1, h2 {
       color: #0078d4;
     }
-    p {
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0078d4;
+      font-weight: normal;
+    }
+    nav a.active {
+      font-weight: 700;
+      color: #004a9f;
+      text-decoration: underline;
+    }
+    nav a:hover:not(.active) {
+      text-decoration: underline;
+    }
+    p, ul {
       line-height: 1.8;
       margin: 1em 0;
     }
-    a {
-      color: #0078d4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    ul {
+      margin-left: 20px;
     }
     .footer {
       margin-top: 40px;
@@ -36,24 +48,36 @@
   </style>
 </head>
 <body>
-  <h1>PPP Tools 支持页面</h1>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="support.html" class="active">支持</a>
+    <a href="privacy.html">隐私声明</a>
+  </nav>
 
-  <p>欢迎来到本扩展的支持页面！如果您在使用过程中遇到任何问题、建议或反馈，请通过以下方式联系我们：</p>
+  <h1>支持页面</h1>
 
+  <h2>联系方式</h2>
+  <p>如果您在使用过程中遇到任何问题、建议或反馈，欢迎通过以下方式联系我们：</p>
   <ul>
-    <li>📧 邮箱：<a href="zyaozyao35@gmail.com">zyaozyao35@gmail.com</a></li>
-    <li>🔗 项目主页：<a href="https://yourdomain.com">https://yourdomain.com</a></li>
+    <li>📧 邮箱：<a href="mailto:support@yourdomain.com">support@yourdomain.com</a></li>
+    <li>🔗 项目主页：<a href="https://yourdomain.com" target="_blank" rel="noopener noreferrer">https://yourdomain.com</a></li>
   </ul>
 
-  <h2>常见问题</h2>
-  <p><strong>Q: 扩展需要哪些权限？</strong><br>
-  A: 扩展需要访问浏览器标签页信息和存储设置，用于正常功能，不收集或上传用户数据。</p>
+  <h2>常见问题（FAQ）</h2>
+  <p><strong>Q1：PPP Tools 支持哪些钱包？</strong></p>
+  <p>A1：目前仅支持 <code>OKX Wallet</code> 浏览器扩展。</p>
 
-  <p><strong>Q: 遇到 Bug 怎么办？</strong><br>
-  A: 您可以通过上述邮箱发送详细描述或截图，我们会尽快修复。</p>
+  <p><strong>Q2：扩展是否安全？会不会泄漏钱包私钥？</strong></p>
+  <p>A2：扩展不会收集或存储您的私钥。所有交易签名均由您本地钱包完成，扩展仅做辅助监控和自动点击操作。</p>
+
+  <p><strong>Q3：如何切换初级模式和进阶模式？</strong></p>
+  <p>A3：初级模式为纯扩展操作，需要手动确认钱包弹窗；进阶模式需要额外运行自动化脚本，实现钱包弹窗自动确认。</p>
+
+  <p><strong>Q4：遇到 Bug 怎么办？</strong></p>
+  <p>A4：请发送详细描述和截图到上述邮箱，我们会尽快修复。</p>
 
   <h2>版本更新</h2>
-  <p>请关注 Chrome 网上应用店页面获取最新版本和更新日志。</p>
+  <p>请关注 Chrome 网上应用店页面了解最新版本和更新日志。</p>
 
   <div class="footer">
     &copy; 2025 PPP Tools. All rights reserved.
