@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,46 +14,58 @@
       background: #f9fafb;
       color: #333;
     }
-    h1{
+
+    h1 {
       text-align: center;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
       color: #0078d4;
     }
+
     nav {
       margin-bottom: 20px;
     }
+
     nav a {
       margin-right: 15px;
       text-decoration: none;
       color: #0078d4;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     nav a.active {
       font-weight: 700;
       color: #004a9f;
       text-decoration: underline;
     }
+
     .logo {
       height: 30px;
       display: inline-block;
       vertical-align: middle;
     }
+
     ul {
       margin-left: 20px;
     }
+
     code {
       background: #eee;
       padding: 2px 4px;
       border-radius: 4px;
     }
+
     .section {
       margin-bottom: 40px;
     }
   </style>
 </head>
+
 <body>
   <nav>
     <a href="/"><img src="./images/logo.png" class="logo"></a>
@@ -66,7 +79,9 @@
   <div class="section">
     <h2>适用人群</h2>
     <ul>
-      <li>PPP Tools专注为ppp.fun用户提供优质、安全、高效服务，让你在ppp.fun上抢购NFT变得轻松愉悦，速度比人快10倍，成功率也提升10倍，最重要是让你告别人工盯点、半夜爬床，节省无数宝贵时间精力，上至强庄大户下至散户小白，均可满足你的诉求</li>
+      <li>PPP
+        Tools专注为ppp.fun用户提供优质、安全、高效服务，让你在ppp.fun上抢购NFT变得轻松愉悦，速度比人快10倍，成功率也提升10倍，最重要是让你告别人工盯点、半夜爬床，节省无数宝贵时间精力，上至强庄大户下至散户小白，均可满足你的诉求
+      </li>
     </ul>
   </div>
 
@@ -78,8 +93,11 @@
       <li>仅依赖你本地安装的钱包（Tokenpocket）及 ppp.fun 官网，不会收集你的个人数据，工具相关的配置仅存储都在你自己本地电脑上。</li>
       <li>钱包交互均由您本地安装的钱包扩展中完成，所有签名操作仅在钱包中进行。</li>
       <li>所有交互完全与手动一致，仅做实时监控和快速出手，比手速快至少 10 倍。</li>
-      
+
     </ul>
+  </div>
+  <div class="section" style=" text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GzsKOJ2NRv0?autoplay=1&mute=1&loop=1&controls=0&cc_load_policy=1"></iframe>
   </div>
 
   <div class="section">
@@ -96,17 +114,22 @@ https://docs.qq.com/doc/DY1hrb2dORGV0R0FG">准备工作教程</a></h3>
     <h3>初级模式</h3>
     <ul>
       <li>访问 <a href="https://ppp.fun" target="_blank">ppp.fun</a> 连接 TokenPocket 钱包</li>
-      <li>进入 <a href="https://ppp.fun/user/rewards" target="_blank">奖励页</a>，点击右上角「Enter Code」输入推荐码 <code>19YO8Y6T</code> 并保存。</li>
+      <li>进入 <a href="https://ppp.fun/user/rewards" target="_blank">奖励页</a>，点击右上角「Enter Code」输入推荐码 <code>19YO8Y6T</code>
+        并保存。</li>
       <li>随便进入一个项目详情页面，点【QUICK BUY】->点【Settings】-> 勾选【Random】、勾选【Faster Confirmation】->Save Config</li>
-      <li>打开「PPP Tools」扩展面板，设置提前抢购秒数[推荐30～40，因为签名有时效性，太长可能会失效]、设置快速购买最大值[跟官网保持一致，目前10]、设置要监控的PPP项目CA、最大抢购张数（可多个项目），并保存。</li>
-      <li>接下来扩展会自动监测项目进度、提前5分钟左右根据配置的最大抢购数量打开多个项目页、自动滚动加载页面、切换页面、实时监测倒计时、倒计时结束前x秒(扩展配置的)自动进行点击quick buy、自动设置最大抢购数量、自动点击confirm按钮</li>
+      <li>打开「PPP Tools」扩展面板，设置提前抢购秒数[推荐30～40，因为签名有时效性，太长可能会失效]、设置快速购买最大值[跟官网保持一致，目前10]、设置要监控的PPP项目CA、最大抢购张数（可多个项目），并保存。
+      </li>
+      <li>接下来扩展会自动监测项目进度、提前5分钟左右根据配置的最大抢购数量打开多个项目页、自动滚动加载页面、切换页面、实时监测倒计时、倒计时结束前x秒(扩展配置的)自动进行点击quick
+        buy、自动设置最大抢购数量、自动点击confirm按钮</li>
       <li>自动点击快速购买弹窗中的confirm按钮后，会弹出钱包确认弹窗，这个需要手动来点，初级模式这里是无法自动化点钱包弹窗里的确认的</li>
     </ul>
     <p><strong>初级模式说明：</strong></p>
     <ul>
       <li>扩展在自动打开项目页面后会检测钱包与ppp.fun的连接状态并尝试自动连接、检测推荐码绑定情况并提示。</li>
-      <li>进入一个项目详情页面，点【QUICK BUY】->点【Settings】-> 勾选【Random】、勾选【Faster Confirmation】->Save Config 这个操作只需要做一次就会缓存在本地，不用每次都这样做，除非你清空浏览器缓存数据</li>
-      <li>手机上有一个【狐猴浏览器】，它可以安装chrome浏览器扩展，用它访问chrome商店搜索"PPP Tools"就可以找到并安装，对于没有电脑的用户可以通过这种方式来使用，总会比你手动快，不过还是建议使用电脑，电脑总比手机强大的</li>
+      <li>进入一个项目详情页面，点【QUICK BUY】->点【Settings】-> 勾选【Random】、勾选【Faster Confirmation】->Save Config
+        这个操作只需要做一次就会缓存在本地，不用每次都这样做，除非你清空浏览器缓存数据</li>
+      <li>手机上有一个【狐猴浏览器】，它可以安装chrome浏览器扩展，用它访问chrome商店搜索"PPP
+        Tools"就可以找到并安装，对于没有电脑的用户可以通过这种方式来使用，总会比你手动快，不过还是建议使用电脑，电脑总比手机强大的</li>
     </ul>
     <p style="color:red;">初级模式操作简单、容易上手，可熟悉流程；进阶模式则完全自动化，让你抢图如飞！</p>
 
@@ -116,12 +139,15 @@ https://docs.qq.com/doc/DY1hrb2dORGV0R0FG">准备工作教程</a></h3>
       <li>下载并修改自动化点击脚本配置</li>
       <li>运行脚本调起浏览器, 解锁钱包（第一次运行要创建或这导入钱包）</li>
       <li>在脚本调起的浏览器中访问 <a href="https://ppp.fun" target="_blank">ppp.fun</a> 连接 TokenPocket 钱包</li>
-      <li>在脚本调起的浏览器中访问 <a href="https://ppp.fun/user/rewards" target="_blank">奖励页</a>，点击右上角「Enter Code」输入推荐码 <code>19YO8Y6T</code> 并保存。</li>
+      <li>在脚本调起的浏览器中访问 <a href="https://ppp.fun/user/rewards" target="_blank">奖励页</a>，点击右上角「Enter Code」输入推荐码
+        <code>19YO8Y6T</code> 并保存。</li>
       <li>在脚本调起的浏览器中随便进入一个项目详情页面，点【QUICK BUY】->点【Settings】-> 勾选【Random】、勾选【Faster Confirmation】->Save Config</li>
-      <li>在脚本调起的浏览器中打开「PPP Tools」扩展面板，设置提前抢购秒数[推荐30～40，因为签名有时效性，太长可能会失效]、设置快速购买最大值[跟官网保持一致，目前10]、设置要监控的PPP项目CA、最大抢购张数（可多个项目），并保存。</li>
-      <li>接下来扩展会自动监测项目进度、提前5分钟左右根据配置的最大抢购数量打开多个项目页、自动滚动加载页面、切换页面、实时监测倒计时、倒计时结束前x秒(扩展配置的)自动进行点击quick buy、自动设置最大抢购数量、自动点击confirm按钮</li>
+      <li>在脚本调起的浏览器中打开「PPP
+        Tools」扩展面板，设置提前抢购秒数[推荐30～40，因为签名有时效性，太长可能会失效]、设置快速购买最大值[跟官网保持一致，目前10]、设置要监控的PPP项目CA、最大抢购张数（可多个项目），并保存。</li>
+      <li>接下来扩展会自动监测项目进度、提前5分钟左右根据配置的最大抢购数量打开多个项目页、自动滚动加载页面、切换页面、实时监测倒计时、倒计时结束前x秒(扩展配置的)自动进行点击quick
+        buy、自动设置最大抢购数量、自动点击confirm按钮</li>
       <li>进阶脚本会自动快速点击钱包弹窗中的确认按钮，完成签名，等倒计时结束后自动发送交易，抢购完成。</li>
-      <li>前面扩展自动打开的项目页面会在5分钟后自动关闭，然后等待下一轮自动抢购</li> 
+      <li>前面扩展自动打开的项目页面会在5分钟后自动关闭，然后等待下一轮自动抢购</li>
     </ul>
     <p><strong>进阶模式说明：</strong> </p>
     <ul>
@@ -136,4 +162,5 @@ https://docs.qq.com/doc/DY1hrb2dORGV0R0FG">准备工作教程</a></h3>
     &copy; 2025 PPP Tools. All rights reserved.
   </div>
 </body>
+
 </html>
